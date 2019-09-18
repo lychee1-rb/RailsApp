@@ -1,0 +1,15 @@
+<h1>Welcome to Myapp!!</h1>
+<p>あなたもこのアプリでエコマスター！</p>
+<%= form_with scope: :eco, local: true do |form| %>
+<p>
+<%= link_to image_tag('setsuden_off.png',width: "300px"), "http://localhost:3000/welcome/show" %>
+節電
+<%= link_to image_tag('gomi_bunbetsu.png',width: "300px"), "http://localhost:3000/welcome/show" %>
+分別
+<%= link_to image_tag('water-bottle.png',width: "250px",height: "300px"), "http://localhost:3000/welcome/show" %>
+水筒
+<%= link_to image_tag('watermark.jpg',width: "300px"), "http://localhost:3000/welcome/show" %>
+マイバッグ
+</p>
+<% end %>
+
